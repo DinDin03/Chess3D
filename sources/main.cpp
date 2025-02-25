@@ -53,25 +53,6 @@ int main() {
             }
         }
 
-        // Draw Pieces as Cylinders (Temporary Placeholders)
-        float pieceHeight = 1.0f;
-        float pieceRadius = 0.3f;
-
-        for (int i = 0; i < 8; i++) {
-            // White Pawns
-            DrawCylinder({ i + 0.5f, 0.5f, 6.5f }, pieceRadius, pieceRadius, pieceHeight, 12, WHITE);
-            // Black Pawns
-            DrawCylinder({ i + 0.5f, 0.5f, 1.5f }, pieceRadius, pieceRadius, pieceHeight, 12, BLACK);
-        }
-
-        // White King & Queen
-        DrawCylinder({ 3.5f, 0.5f, 7.5f }, pieceRadius + 0.1f, pieceRadius, pieceHeight + 0.5f, 12, WHITE);
-        DrawCylinder({ 4.5f, 0.5f, 7.5f }, pieceRadius + 0.1f, pieceRadius, pieceHeight + 0.5f, 12, WHITE);
-
-        // Black King & Queen
-        DrawCylinder({ 3.5f, 0.5f, 0.5f }, pieceRadius + 0.1f, pieceRadius, pieceHeight + 0.5f, 12, BLACK);
-        DrawCylinder({ 4.5f, 0.5f, 0.5f }, pieceRadius + 0.1f, pieceRadius, pieceHeight + 0.5f, 12, BLACK);
-
         EndMode3D();
         DrawText("3D Chess Game", 10, 10, 20, BLACK);
         EndDrawing();
